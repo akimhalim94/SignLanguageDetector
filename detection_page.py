@@ -11,6 +11,8 @@ from PIL import Image, ImageTk
 
 import config
 
+import os
+
 
 class DetectionPage(tk.Frame):
     def __init__(self, master, labels, on_back, on_quit):
@@ -19,12 +21,11 @@ class DetectionPage(tk.Frame):
         self.on_back = on_back
         self.on_quit = on_quit
 
-        self._video_photo = None  # keep a reference alive for Tkinter
+        self._video_photo = None
 
         self._build_layout()
 
     # -- layout ---------------------------------------------------------------
-
     def _build_layout(self):
         # Top bar -------------------------------------------------------------
         topbar = tk.Frame(self, bg=config.COLOR_PANEL, height=56)
@@ -81,25 +82,97 @@ class DetectionPage(tk.Frame):
 
     def _build_camera_panel(self, parent):
         left = tk.Frame(parent, bg=config.COLOR_BG_DARK)
-        left.grid(row=0, column=0, sticky="nsew", padx=(20, 10), pady=20)
+        left.grid(
+            row=0,
+            column=0,
+            sticky="nsew",
+            padx=(20, 10),
+            pady=20
+        )
 
         header = tk.Label(
             left,
-            text="CAMERA VIEW",
-            font=("Segoe UI", 11, "bold"),
             fg=config.COLOR_TEXT_SECONDARY,
             bg=config.COLOR_BG_DARK,
         )
         header.pack(anchor="w", pady=(0, 8))
 
-        video_frame = tk.Frame(
-            left, bg="#000000", highlightthickness=2,
-            highlightbackground=config.COLOR_BORDER,
-        )
-        video_frame.pack(fill="both", expand=True)
 
-        self.video_label = tk.Label(video_frame, bg="#000000")
-        self.video_label.pack(fill="both", expand=True)
+        # ---------- Reference image ----------
+        self.reference_frame = tk.Frame(
+            left,
+            bg=config.COLOR_PANEL,
+            height=130
+        )
+        ref_title = tk.Label(
+            left,
+            text="REFERENCE",
+            font=("Segoe UI", 11, "bold"),
+            fg=config.COLOR_TEXT_SECONDARY,
+            bg=config.COLOR_BG_DARK
+        )
+        ref_title.pack(anchor="w", pady=(0,5))
+
+        self.reference_frame.pack(
+            fill="x",
+            pady=(0,10)
+        )
+        self.reference_frame.pack_propagate(False)
+
+
+        path = os.path.join("assets", "reference.png")
+
+        if os.path.exists(path):
+
+            img = Image.open(path)
+
+            # landscape
+            img.thumbnail((700, 110))
+
+            photo = ImageTk.PhotoImage(img)
+
+            self.reference_label = tk.Label(
+                self.reference_frame,
+                image=photo,
+                bg=config.COLOR_PANEL
+            )
+
+            self.reference_label.image = photo
+            self.reference_label.pack(
+                expand=True
+            )
+
+
+        # ---------- Camera ----------
+        video_frame = tk.Frame(
+            left,
+            bg="#000000"
+        )
+
+        camera_title = tk.Label(
+            left,
+            text="CAMERA VIEW",
+            font=("Segoe UI", 11, "bold"),
+            fg=config.COLOR_TEXT_SECONDARY,
+            bg=config.COLOR_BG_DARK
+        )
+        camera_title.pack(anchor="w", pady=(10,5))
+
+        video_frame.pack(
+            fill="both",
+            expand=True
+        )
+
+
+        self.video_label = tk.Label(
+            video_frame,
+            bg="#000000"
+        )
+
+        self.video_label.pack(
+            fill="both",
+            expand=True
+        )
 
     def _build_results_panel(self, parent):
         right = tk.Frame(parent, bg=config.COLOR_BG_DARK)
