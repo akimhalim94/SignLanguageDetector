@@ -1,0 +1,5 @@
+tensorflow>=2.16
+tf-keras>=2.16
+opencv-python>=4.8
+Pillow>=10.0
+numpy>=1.26
