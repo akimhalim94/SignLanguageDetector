@@ -22,8 +22,8 @@ BACKGROUND_IMAGE_PATH = os.path.join(ASSETS_DIR, "background.png")
 # Window
 # ---------------------------------------------------------------------------
 APP_TITLE = "Sign Language Detector"
-WINDOW_WIDTH = 1280
-WINDOW_HEIGHT = 800
+WINDOW_WIDTH = 1000
+WINDOW_HEIGHT = 600
 MIN_WINDOW_WIDTH = 1000
 MIN_WINDOW_HEIGHT = 650
 
