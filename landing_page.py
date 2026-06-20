@@ -123,7 +123,7 @@ class LandingPage(tk.Frame):
 
         subtitle = tk.Label(
             overlay,
-            text="Real-time sign recognition powered by trained model",
+            text="Real-time sign recognition powered by your trained model",
             font=("Segoe UI", 13),
             fg=config.COLOR_TEXT_SECONDARY,
             bg=config.COLOR_BG_DARK,

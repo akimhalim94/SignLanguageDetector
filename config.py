@@ -22,7 +22,7 @@ BACKGROUND_IMAGE_PATH = os.path.join(ASSETS_DIR, "background.png")
 # Window
 # ---------------------------------------------------------------------------
 APP_TITLE = "Sign Language Detector"
-WINDOW_WIDTH = 1200
+WINDOW_WIDTH = 1280
 WINDOW_HEIGHT = 800
 MIN_WINDOW_WIDTH = 1000
 MIN_WINDOW_HEIGHT = 650
@@ -34,6 +34,29 @@ IMAGE_SIZE = 224              # Teachable Machine models expect 224x224 input
 CAMERA_INDEX = 0              # change if you have more than one webcam
 PREDICTION_INTERVAL_MS = 200  # how often (ms) to run a new prediction
 CONFIDENCE_THRESHOLD = 0.60   # below this, the UI shows "..." instead of a guess
+
+# ---------------------------------------------------------------------------
+# Hand / face landmark detection (MediaPipe)
+# ---------------------------------------------------------------------------
+DETECT_HANDS = True
+DETECT_FACE = True
+MAX_NUM_HANDS = 2
+LANDMARK_MIN_DETECTION_CONFIDENCE = 0.5
+LANDMARK_MIN_TRACKING_CONFIDENCE = 0.5
+
+# Overlay colors are in OpenCV's BGR order (not RGB), since drawing happens
+# with cv2 before the frame is converted for display.
+COLOR_HAND_BOX_BGR = (178, 196, 64)    # teal-ish accent box around each hand
+COLOR_HAND_LINE_BGR = (200, 220, 150)  # skeleton connector lines
+COLOR_HAND_POINT_BGR = (78, 230, 255)  # knuckle/fingertip dots
+COLOR_FACE_BOX_BGR = (76, 76, 225)     # box around detected face
+
+# ---------------------------------------------------------------------------
+# Audio announcement (text-to-speech)
+# ---------------------------------------------------------------------------
+ENABLE_AUDIO = True
+TTS_RATE = 170      # words per minute (pyttsx3 default is usually ~200)
+TTS_VOLUME = 1.0    # 0.0 - 1.0
 
 # ---------------------------------------------------------------------------
 # Color palette (matches the generated background)

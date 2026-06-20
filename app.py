@@ -21,6 +21,7 @@ from camera_worker import CameraWorker
 from detection_page import DetectionPage
 from landing_page import LandingPage
 from sign_model import SignLanguageModel
+from overlay_drawing import draw_detections
 
 
 class SignLanguageApp:
@@ -108,17 +109,23 @@ class SignLanguageApp:
         # -- errors ---------------------------------------------------------
         try:
             err = self.camera_worker.error_queue.get_nowait()
-            self.detection_page.set_status("● Camera error", config.COLOR_DANGER)
-            self.detection_page.show_camera_placeholder(err)
-            messagebox.showerror("Camera Error", err)
-            self._poll_job = None
-            return  # stop polling; user can go Back and retry
+            if err.startswith("Voice announcements"):
+                # Non-fatal: keep the camera loop running, just let the
+                # user know once via a small dialog.
+                messagebox.showwarning("Audio Notice", err)
+            else:
+                self.detection_page.set_status("● Camera error", config.COLOR_DANGER)
+                self.detection_page.show_camera_placeholder(err)
+                messagebox.showerror("Camera Error", err)
+                self._poll_job = None
+                return  # stop polling; user can go Back and retry
         except queue.Empty:
             pass
 
         # -- latest frame -----------------------------------------------------
         try:
-            frame_rgb = self.camera_worker.frame_queue.get_nowait()
+            frame_rgb, detections = self.camera_worker.frame_queue.get_nowait()
+            draw_detections(frame_rgb, detections)
             self._render_frame(frame_rgb)
             self.detection_page.set_status("● Live", config.COLOR_ACCENT)
         except queue.Empty:

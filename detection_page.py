@@ -21,11 +21,12 @@ class DetectionPage(tk.Frame):
         self.on_back = on_back
         self.on_quit = on_quit
 
-        self._video_photo = None
+        self._video_photo = None  # keep a reference alive for Tkinter
 
         self._build_layout()
 
     # -- layout ---------------------------------------------------------------
+
     def _build_layout(self):
         # Top bar -------------------------------------------------------------
         topbar = tk.Frame(self, bg=config.COLOR_PANEL, height=56)
@@ -82,21 +83,7 @@ class DetectionPage(tk.Frame):
 
     def _build_camera_panel(self, parent):
         left = tk.Frame(parent, bg=config.COLOR_BG_DARK)
-        left.grid(
-            row=0,
-            column=0,
-            sticky="nsew",
-            padx=(20, 10),
-            pady=20
-        )
-
-        header = tk.Label(
-            left,
-            fg=config.COLOR_TEXT_SECONDARY,
-            bg=config.COLOR_BG_DARK,
-        )
-        header.pack(anchor="w", pady=(0, 8))
-
+        left.grid(row=0, column=0, sticky="nsew", padx=(20, 10), pady=20)
 
         # ---------- Reference image ----------
         self.reference_frame = tk.Frame(
@@ -142,37 +129,24 @@ class DetectionPage(tk.Frame):
                 expand=True
             )
 
-
-        # ---------- Camera ----------
-        video_frame = tk.Frame(
-            left,
-            bg="#000000"
-        )
-
-        camera_title = tk.Label(
+        # ---------- Camera view ----------
+        header = tk.Label(
             left,
             text="CAMERA VIEW",
             font=("Segoe UI", 11, "bold"),
             fg=config.COLOR_TEXT_SECONDARY,
-            bg=config.COLOR_BG_DARK
+            bg=config.COLOR_BG_DARK,
         )
-        camera_title.pack(anchor="w", pady=(10,5))
+        header.pack(anchor="w", pady=(0, 8))
 
-        video_frame.pack(
-            fill="both",
-            expand=True
+        video_frame = tk.Frame(
+            left, bg="#000000", highlightthickness=2,
+            highlightbackground=config.COLOR_BORDER,
         )
+        video_frame.pack(fill="both", expand=True)
 
-
-        self.video_label = tk.Label(
-            video_frame,
-            bg="#000000"
-        )
-
-        self.video_label.pack(
-            fill="both",
-            expand=True
-        )
+        self.video_label = tk.Label(video_frame, bg="#000000")
+        self.video_label.pack(fill="both", expand=True)
 
     def _build_results_panel(self, parent):
         right = tk.Frame(parent, bg=config.COLOR_BG_DARK)
