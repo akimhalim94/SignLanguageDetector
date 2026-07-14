@@ -29,7 +29,7 @@ MIN_WINDOW_HEIGHT = 650
 # ---------------------------------------------------------------------------
 IMAGE_SIZE = 224              # Teachable Machine models expect 224x224 input
 CAMERA_INDEX = 0              # change if have more than one webcam
-PREDICTION_INTERVAL_MS = 200  # how often (ms) to run a new prediction
+PREDICTION_INTERVAL_MS = 400  # how often (ms) to run a new prediction
 CONFIDENCE_THRESHOLD = 0.60   # below this, the UI shows "..." instead of a guess
 
 # ---------------------------------------------------------------------------
