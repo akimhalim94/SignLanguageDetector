@@ -1,8 +1,7 @@
 """
 detection_page.py
 The second screen: live camera feed on the left, detected sign text and
-confidence on the right, plus a ranked list of all class probabilities
-and a button to go back / end the program.
+confidence on the right
 """
 
 import tkinter as tk

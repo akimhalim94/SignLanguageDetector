@@ -2,19 +2,6 @@
 sign_model.py
 Wraps the Teachable Machine Keras model so the rest of the app doesn't need
 to know anything about TensorFlow internals.
-
-NOTE ON COMPATIBILITY:
-Teachable Machine exports were generated with an older Keras (2.4.0) and use
-a DepthwiseConv2D config that includes a 'groups' argument. Modern Keras
-(3.x, bundled with current TensorFlow) does not accept that argument and
-will throw a TypeError when loading the .h5 file directly. To keep this
-project working out-of-the-box on current TensorFlow installs, we:
-  1. Force TensorFlow to use its bundled legacy Keras 2 implementation
-     (via the TF_USE_LEGACY_KERAS environment variable), which can read
-     these older model files correctly.
-  2. Patch DepthwiseConv2D to silently drop the unsupported 'groups' kwarg,
-     as a safety net for environments where the legacy loader still
-     forwards it.
 """
 
 import os

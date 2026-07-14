@@ -12,8 +12,6 @@ import config
 
 
 def _denormalize_box(box, width, height, pad_frac=0.04):
-    """Converts a normalized (xmin, ymin, xmax, ymax) box to pixel coords,
-    with a small padding margin so the box doesn't hug the fingertips."""
     xmin, ymin, xmax, ymax = box
     pad_x = (xmax - xmin) * pad_frac
     pad_y = (ymax - ymin) * pad_frac
@@ -26,11 +24,6 @@ def _denormalize_box(box, width, height, pad_frac=0.04):
 
 
 def draw_detections(frame_rgb, detections, draw_hands=True, draw_face=True):
-    """
-    Draws onto frame_rgb in place and returns it.
-    detections: the dict returned by LandmarkDetector.process(), plus an
-    optional "hand_connections" entry used to draw the skeleton lines.
-    """
     height, width = frame_rgb.shape[:2]
 
     if draw_face:

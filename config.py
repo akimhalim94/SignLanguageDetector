@@ -1,8 +1,5 @@
 """
 config.py
-Central configuration for the Sign Language Detector app.
-Keeping these values in one place makes it easy to re-skin the app
-or point it at a different Teachable Machine export later.
 """
 
 import os
@@ -31,12 +28,12 @@ MIN_WINDOW_HEIGHT = 650
 # Model / inference
 # ---------------------------------------------------------------------------
 IMAGE_SIZE = 224              # Teachable Machine models expect 224x224 input
-CAMERA_INDEX = 0              # change if you have more than one webcam
+CAMERA_INDEX = 0              # change if have more than one webcam
 PREDICTION_INTERVAL_MS = 200  # how often (ms) to run a new prediction
 CONFIDENCE_THRESHOLD = 0.60   # below this, the UI shows "..." instead of a guess
 
 # ---------------------------------------------------------------------------
-# Hand / face landmark detection (MediaPipe)
+# Hand / face landmark detection
 # ---------------------------------------------------------------------------
 DETECT_HANDS = True
 DETECT_FACE = True
@@ -44,8 +41,6 @@ MAX_NUM_HANDS = 2
 LANDMARK_MIN_DETECTION_CONFIDENCE = 0.5
 LANDMARK_MIN_TRACKING_CONFIDENCE = 0.5
 
-# Overlay colors are in OpenCV's BGR order (not RGB), since drawing happens
-# with cv2 before the frame is converted for display.
 COLOR_HAND_BOX_BGR = (178, 196, 64)    # teal-ish accent box around each hand
 COLOR_HAND_LINE_BGR = (200, 220, 150)  # skeleton connector lines
 COLOR_HAND_POINT_BGR = (78, 230, 255)  # knuckle/fingertip dots
@@ -55,7 +50,7 @@ COLOR_FACE_BOX_BGR = (76, 76, 225)     # box around detected face
 # Audio announcement (text-to-speech)
 # ---------------------------------------------------------------------------
 ENABLE_AUDIO = True
-TTS_RATE = 170      # words per minute (pyttsx3 default is usually ~200)
+TTS_RATE = 170      # words per minute
 TTS_VOLUME = 1.0    # 0.0 - 1.0
 
 # ---------------------------------------------------------------------------
@@ -76,7 +71,7 @@ COLOR_BORDER = "#23415F"
 def load_labels():
     """
     Reads labels.txt (Teachable Machine format: "<index> <label name>")
-    and returns an ordered list of label strings.
+    and returns ordered list of label strings.
     """
     labels = []
     with open(LABELS_PATH, "r", encoding="utf-8") as f:

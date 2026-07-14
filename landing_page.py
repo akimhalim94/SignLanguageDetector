@@ -2,10 +2,6 @@
 landing_page.py
 The first screen the user sees: a full-window background image with a
 title and two buttons - "Start Camera" and "End Program".
-
-The content sits inside a translucent-looking rounded card that is drawn
-directly on the canvas (Tk has no native alpha-blended panels), giving a
-softer, more deliberate look than a flat rectangle.
 """
 
 import tkinter as tk
@@ -171,10 +167,6 @@ class LandingPage(tk.Frame):
 
     def _reposition_overlay_to_center(self, width, height):
         self.canvas.coords(self._overlay_window, width / 2, height * 0.46)
-        # the background of the overlay frame/labels is a flat color, so we
-        # rely on the glass card sitting directly behind it for contrast;
-        # widgets keep their solid bg since Tk cannot blend them with the
-        # canvas image beneath.
 
     def _make_button(self, parent, text, bg, hover_bg, fg, command):
         btn = tk.Button(

@@ -1,6 +1,6 @@
 """
 landmark_detector.py
-Wraps MediaPipe's Hands and Face Detection solutions so the rest of the
+Wraps Hands and Face Detection solutions so the rest of the
 app can ask "where are the hands/face in this frame?" and get back simple
 data (bounding boxes + hand keypoints) ready for drawing.
 
@@ -44,26 +44,6 @@ class LandmarkDetector:
             )
 
     def process(self, frame_rgb):
-        """
-        Runs detection on a single RGB frame (numpy array, uint8).
-        Returns a dict:
-          {
-            "hands": [
-                {
-                    "box": (xmin, ymin, xmax, ymax),   # normalized 0-1
-                    "points": [(x, y), ...],            # 21 normalized points
-                    "label": "Left" | "Right",
-                },
-                ...
-            ],
-            "faces": [
-                {"box": (xmin, ymin, xmax, ymax)},      # normalized 0-1
-                ...
-            ],
-          }
-        All coordinates are normalized (0-1) so the caller can scale them
-        to whatever frame/display size it's drawing onto.
-        """
         result = {"hands": [], "faces": []}
 
         if self._hands is not None:
