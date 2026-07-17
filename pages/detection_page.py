@@ -607,18 +607,18 @@ class DetectionPage(tk.Frame):
                 f"{top_label.title()} currently has the highest score "
                 f"at {top_score * 100:.0f}%, but it has not reached the "
                 f"{config.CONFIDENCE_THRESHOLD * 100:.0f}% confirmation "
-                "threshold.\n\n"
-                "Why not the others? Their confidence scores are even lower, "
+                "threshold."
+                " Why not the others? Their confidence scores are even lower, "
                 "so none of the classes is reliable enough yet."
             )
         else:
             explanation = (
                 f"{top_label.title()} was selected because it received the "
-                f"highest confidence score at {top_score * 100:.0f}%.\n\n"
-                f"Why not {second_label.title()}? It scored "
+                f"highest confidence score at {top_score * 100:.0f}%."
+                f" Why not {second_label.title()}? It scored "
                 f"{second_score * 100:.0f}%, which is "
                 f"{difference * 100:.0f} percentage points lower. "
-                "The remaining classes also received lower confidence scores."
+                " The remaining classes also received lower confidence scores."
             )
 
         self.explanation_body_label.configure(text=explanation)
