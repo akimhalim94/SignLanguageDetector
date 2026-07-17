@@ -1,0 +1,8 @@
+tensorflow>=2.16
+tf-keras>=2.16
+opencv-python>=4.8
+Pillow>=10.0
+numpy>=1.26
+mediapipe>=0.10.13,<0.10.30
+pyttsx3>=2.90
+pygame
