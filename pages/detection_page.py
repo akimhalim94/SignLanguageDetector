@@ -301,7 +301,7 @@ class DetectionPage(tk.Frame):
             font=("Segoe UI", 29, "bold"),
             fg=config.COLOR_ACCENT,
             bg=config.COLOR_PANEL,
-            wraplength=330,
+            wraplength=310,
             justify="left",
         )
         self.sign_text_label.pack(anchor="w", pady=(8, 3))
@@ -530,10 +530,12 @@ class DetectionPage(tk.Frame):
 
     def _build_explanation_card(self, parent):
         card = self._make_card(parent)
+        card.configure(height=160)   # increase height
         card.pack(fill="x", pady=(0, 10))
+        card.pack_propagate(False)
 
         content = tk.Frame(card, bg=config.COLOR_PANEL)
-        content.pack(fill="x", padx=16, pady=12)
+        content.pack(fill="both", expand=True, padx=16, pady=12)
 
         tk.Label(
             content,
@@ -562,7 +564,7 @@ class DetectionPage(tk.Frame):
             fg=config.COLOR_TEXT_SECONDARY,
             bg=config.COLOR_PANEL,
             justify="left",
-            wraplength=330,
+            wraplength=310,
         )
         self.explanation_body_label.pack(anchor="w")
 
@@ -663,7 +665,7 @@ class DetectionPage(tk.Frame):
             fg=config.COLOR_TEXT_SECONDARY,
             bg=config.COLOR_PANEL,
             justify="left",
-            wraplength=330,
+            wraplength=310,
         )
         self.recent_results_label.pack(anchor="w", pady=(7, 0))
 
