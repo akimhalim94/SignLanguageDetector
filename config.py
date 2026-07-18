@@ -28,7 +28,7 @@ SIGN_REFERENCE_IMAGES = {
 
 # Replace each placeholder with the correct YouTube video URL.
 SIGN_YOUTUBE_URLS = {
-    "MAAF": "youtube.com/watch?v=WzP6REJMWwg&t=1s",
+    "MAAF": "https://www.youtube.com/watch?v=uCLr3yR_Mzc&t=1s",
     "HELLO": "https://www.youtube.com/watch?v=J3Yts6SKxOQ&t=1s",
     "TERIMA KASIH": "https://www.youtube.com/watch?v=uQiZ5mBhers&t=1s",
     "SAMA-SAMA": "https://www.youtube.com/watch?v=DBCRj6JNGgk&t=1s",
