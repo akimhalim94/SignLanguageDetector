@@ -1,0 +1,106 @@
+﻿image,actual_label,predicted_label,confidence,correct
+dataset\test_images\HELLO\person1_ (1).jpg,HELLO,HELLO,0.994489,True
+dataset\test_images\HELLO\person1_ (10).jpg,HELLO,HELLO,0.998304,True
+dataset\test_images\HELLO\person1_ (11).jpg,HELLO,HELLO,0.999684,True
+dataset\test_images\HELLO\person1_ (12).jpg,HELLO,HELLO,0.999569,True
+dataset\test_images\HELLO\person1_ (13).jpg,HELLO,HELLO,0.999667,True
+dataset\test_images\HELLO\person1_ (14).jpg,HELLO,HELLO,0.999321,True
+dataset\test_images\HELLO\person1_ (15).jpg,HELLO,HELLO,0.998443,True
+dataset\test_images\HELLO\person1_ (16).jpg,HELLO,HELLO,0.990266,True
+dataset\test_images\HELLO\person1_ (17).jpg,HELLO,HELLO,0.994115,True
+dataset\test_images\HELLO\person1_ (18).jpg,HELLO,HELLO,0.990536,True
+dataset\test_images\HELLO\person1_ (19).jpg,HELLO,HELLO,0.975671,True
+dataset\test_images\HELLO\person1_ (2).jpg,HELLO,HELLO,0.980233,True
+dataset\test_images\HELLO\person1_ (20).jpg,HELLO,HELLO,0.971242,True
+dataset\test_images\HELLO\person1_ (21).jpg,HELLO,HELLO,0.993838,True
+dataset\test_images\HELLO\person1_ (3).jpg,HELLO,HELLO,0.997960,True
+dataset\test_images\HELLO\person1_ (4).jpg,HELLO,HELLO,0.998660,True
+dataset\test_images\HELLO\person1_ (5).jpg,HELLO,HELLO,0.995344,True
+dataset\test_images\HELLO\person1_ (6).jpg,HELLO,HELLO,0.997809,True
+dataset\test_images\HELLO\person1_ (7).jpg,HELLO,HELLO,0.999063,True
+dataset\test_images\HELLO\person1_ (8).jpg,HELLO,HELLO,0.998815,True
+dataset\test_images\HELLO\person1_ (9).jpg,HELLO,HELLO,0.998846,True
+dataset\test_images\JUMPA LAGI\person1_ (1).jpg,JUMPA LAGI,JUMPA LAGI,0.932862,True
+dataset\test_images\JUMPA LAGI\person1_ (10).jpg,JUMPA LAGI,JUMPA LAGI,0.981935,True
+dataset\test_images\JUMPA LAGI\person1_ (11).jpg,JUMPA LAGI,JUMPA LAGI,0.989986,True
+dataset\test_images\JUMPA LAGI\person1_ (12).jpg,JUMPA LAGI,JUMPA LAGI,0.874086,True
+dataset\test_images\JUMPA LAGI\person1_ (13).jpg,JUMPA LAGI,JUMPA LAGI,0.945714,True
+dataset\test_images\JUMPA LAGI\person1_ (14).jpg,JUMPA LAGI,JUMPA LAGI,0.992712,True
+dataset\test_images\JUMPA LAGI\person1_ (15).jpg,JUMPA LAGI,JUMPA LAGI,0.991914,True
+dataset\test_images\JUMPA LAGI\person1_ (16).jpg,JUMPA LAGI,JUMPA LAGI,0.970734,True
+dataset\test_images\JUMPA LAGI\person1_ (17).jpg,JUMPA LAGI,JUMPA LAGI,0.969683,True
+dataset\test_images\JUMPA LAGI\person1_ (18).jpg,JUMPA LAGI,JUMPA LAGI,0.915999,True
+dataset\test_images\JUMPA LAGI\person1_ (19).jpg,JUMPA LAGI,JUMPA LAGI,0.963736,True
+dataset\test_images\JUMPA LAGI\person1_ (2).jpg,JUMPA LAGI,JUMPA LAGI,0.968802,True
+dataset\test_images\JUMPA LAGI\person1_ (20).jpg,JUMPA LAGI,JUMPA LAGI,0.974900,True
+dataset\test_images\JUMPA LAGI\person1_ (21).jpg,JUMPA LAGI,JUMPA LAGI,0.910142,True
+dataset\test_images\JUMPA LAGI\person1_ (3).jpg,JUMPA LAGI,JUMPA LAGI,0.967807,True
+dataset\test_images\JUMPA LAGI\person1_ (4).jpg,JUMPA LAGI,JUMPA LAGI,0.997000,True
+dataset\test_images\JUMPA LAGI\person1_ (5).jpg,JUMPA LAGI,JUMPA LAGI,0.997651,True
+dataset\test_images\JUMPA LAGI\person1_ (6).jpg,JUMPA LAGI,JUMPA LAGI,0.999047,True
+dataset\test_images\JUMPA LAGI\person1_ (7).jpg,JUMPA LAGI,JUMPA LAGI,0.997933,True
+dataset\test_images\JUMPA LAGI\person1_ (8).jpg,JUMPA LAGI,JUMPA LAGI,0.998918,True
+dataset\test_images\JUMPA LAGI\person1_ (9).jpg,JUMPA LAGI,JUMPA LAGI,0.995078,True
+dataset\test_images\MAAF\person1_ (1).jpg,MAAF,MAAF,0.749016,True
+dataset\test_images\MAAF\person1_ (10).jpg,MAAF,MAAF,0.985629,True
+dataset\test_images\MAAF\person1_ (11).jpg,MAAF,MAAF,0.983666,True
+dataset\test_images\MAAF\person1_ (12).jpg,MAAF,MAAF,0.994609,True
+dataset\test_images\MAAF\person1_ (13).jpg,MAAF,MAAF,0.961871,True
+dataset\test_images\MAAF\person1_ (14).jpg,MAAF,MAAF,0.956064,True
+dataset\test_images\MAAF\person1_ (15).jpg,MAAF,MAAF,0.935695,True
+dataset\test_images\MAAF\person1_ (16).jpg,MAAF,MAAF,0.913972,True
+dataset\test_images\MAAF\person1_ (17).jpg,MAAF,MAAF,0.898054,True
+dataset\test_images\MAAF\person1_ (18).jpg,MAAF,MAAF,0.933075,True
+dataset\test_images\MAAF\person1_ (19).jpg,MAAF,MAAF,0.853466,True
+dataset\test_images\MAAF\person1_ (2).jpg,MAAF,MAAF,0.972839,True
+dataset\test_images\MAAF\person1_ (20).jpg,MAAF,MAAF,0.917500,True
+dataset\test_images\MAAF\person1_ (21).jpg,MAAF,MAAF,0.971801,True
+dataset\test_images\MAAF\person1_ (3).jpg,MAAF,MAAF,0.977538,True
+dataset\test_images\MAAF\person1_ (4).jpg,MAAF,MAAF,0.989435,True
+dataset\test_images\MAAF\person1_ (5).jpg,MAAF,MAAF,0.995056,True
+dataset\test_images\MAAF\person1_ (6).jpg,MAAF,MAAF,0.998503,True
+dataset\test_images\MAAF\person1_ (7).jpg,MAAF,MAAF,0.998543,True
+dataset\test_images\MAAF\person1_ (8).jpg,MAAF,MAAF,0.993926,True
+dataset\test_images\MAAF\person1_ (9).jpg,MAAF,MAAF,0.997084,True
+dataset\test_images\SAMA-SAMA\person1_ (1).jpg,SAMA-SAMA,SAMA-SAMA,0.999650,True
+dataset\test_images\SAMA-SAMA\person1_ (10).jpg,SAMA-SAMA,SAMA-SAMA,0.999779,True
+dataset\test_images\SAMA-SAMA\person1_ (11).jpg,SAMA-SAMA,SAMA-SAMA,0.999924,True
+dataset\test_images\SAMA-SAMA\person1_ (12).jpg,SAMA-SAMA,SAMA-SAMA,0.999646,True
+dataset\test_images\SAMA-SAMA\person1_ (13).jpg,SAMA-SAMA,SAMA-SAMA,0.999768,True
+dataset\test_images\SAMA-SAMA\person1_ (14).jpg,SAMA-SAMA,SAMA-SAMA,0.999808,True
+dataset\test_images\SAMA-SAMA\person1_ (15).jpg,SAMA-SAMA,SAMA-SAMA,0.999856,True
+dataset\test_images\SAMA-SAMA\person1_ (16).jpg,SAMA-SAMA,SAMA-SAMA,0.999848,True
+dataset\test_images\SAMA-SAMA\person1_ (17).jpg,SAMA-SAMA,SAMA-SAMA,0.999655,True
+dataset\test_images\SAMA-SAMA\person1_ (18).jpg,SAMA-SAMA,SAMA-SAMA,0.999816,True
+dataset\test_images\SAMA-SAMA\person1_ (19).jpg,SAMA-SAMA,SAMA-SAMA,0.999753,True
+dataset\test_images\SAMA-SAMA\person1_ (2).jpg,SAMA-SAMA,SAMA-SAMA,0.999958,True
+dataset\test_images\SAMA-SAMA\person1_ (20).jpg,SAMA-SAMA,SAMA-SAMA,0.999524,True
+dataset\test_images\SAMA-SAMA\person1_ (21).jpg,SAMA-SAMA,SAMA-SAMA,0.999346,True
+dataset\test_images\SAMA-SAMA\person1_ (3).jpg,SAMA-SAMA,SAMA-SAMA,0.999969,True
+dataset\test_images\SAMA-SAMA\person1_ (4).jpg,SAMA-SAMA,SAMA-SAMA,0.999926,True
+dataset\test_images\SAMA-SAMA\person1_ (5).jpg,SAMA-SAMA,SAMA-SAMA,0.999928,True
+dataset\test_images\SAMA-SAMA\person1_ (6).jpg,SAMA-SAMA,SAMA-SAMA,0.999875,True
+dataset\test_images\SAMA-SAMA\person1_ (7).jpg,SAMA-SAMA,SAMA-SAMA,0.999866,True
+dataset\test_images\SAMA-SAMA\person1_ (8).jpg,SAMA-SAMA,SAMA-SAMA,0.999909,True
+dataset\test_images\SAMA-SAMA\person1_ (9).jpg,SAMA-SAMA,SAMA-SAMA,0.999765,True
+dataset\test_images\TERIMA KASIH\0.jpg,TERIMA KASIH,TERIMA KASIH,0.903820,True
+dataset\test_images\TERIMA KASIH\1.jpg,TERIMA KASIH,TERIMA KASIH,0.792552,True
+dataset\test_images\TERIMA KASIH\10.jpg,TERIMA KASIH,TERIMA KASIH,0.994459,True
+dataset\test_images\TERIMA KASIH\11.jpg,TERIMA KASIH,TERIMA KASIH,0.904400,True
+dataset\test_images\TERIMA KASIH\12.jpg,TERIMA KASIH,TERIMA KASIH,0.946783,True
+dataset\test_images\TERIMA KASIH\13.jpg,TERIMA KASIH,TERIMA KASIH,0.949825,True
+dataset\test_images\TERIMA KASIH\14.jpg,TERIMA KASIH,TERIMA KASIH,0.774929,True
+dataset\test_images\TERIMA KASIH\15.jpg,TERIMA KASIH,TERIMA KASIH,0.863874,True
+dataset\test_images\TERIMA KASIH\16.jpg,TERIMA KASIH,TERIMA KASIH,0.612802,True
+dataset\test_images\TERIMA KASIH\17.jpg,TERIMA KASIH,TERIMA KASIH,0.904400,True
+dataset\test_images\TERIMA KASIH\18.jpg,TERIMA KASIH,TERIMA KASIH,0.883585,True
+dataset\test_images\TERIMA KASIH\19.jpg,TERIMA KASIH,TERIMA KASIH,0.956864,True
+dataset\test_images\TERIMA KASIH\2.jpg,TERIMA KASIH,TERIMA KASIH,0.999141,True
+dataset\test_images\TERIMA KASIH\20.jpg,TERIMA KASIH,TERIMA KASIH,0.928634,True
+dataset\test_images\TERIMA KASIH\3.jpg,TERIMA KASIH,TERIMA KASIH,0.856305,True
+dataset\test_images\TERIMA KASIH\4.jpg,TERIMA KASIH,TERIMA KASIH,0.903820,True
+dataset\test_images\TERIMA KASIH\5.jpg,TERIMA KASIH,TERIMA KASIH,0.928634,True
+dataset\test_images\TERIMA KASIH\6.jpg,TERIMA KASIH,TERIMA KASIH,0.883585,True
+dataset\test_images\TERIMA KASIH\7.jpg,TERIMA KASIH,TERIMA KASIH,0.871919,True
+dataset\test_images\TERIMA KASIH\8.jpg,TERIMA KASIH,TERIMA KASIH,0.928634,True
+dataset\test_images\TERIMA KASIH\9.jpg,TERIMA KASIH,TERIMA KASIH,0.837598,True

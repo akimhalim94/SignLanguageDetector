@@ -1,0 +1,26 @@
+Total valid test images: 105
+Skipped unreadable images: 0
+
+Accuracy: 1.0000 (100.00%)
+
+Macro Precision: 1.0000
+Macro Recall:    1.0000
+Macro F1-score:  1.0000
+
+Weighted Precision: 1.0000
+Weighted Recall:    1.0000
+Weighted F1-score:  1.0000
+
+Classification Report
+=====================
+              precision    recall  f1-score   support
+
+       HELLO     1.0000    1.0000    1.0000        21
+  JUMPA LAGI     1.0000    1.0000    1.0000        21
+        MAAF     1.0000    1.0000    1.0000        21
+   SAMA-SAMA     1.0000    1.0000    1.0000        21
+TERIMA KASIH     1.0000    1.0000    1.0000        21
+
+    accuracy                         1.0000       105
+   macro avg     1.0000    1.0000    1.0000       105
+weighted avg     1.0000    1.0000    1.0000       105
